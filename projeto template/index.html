@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xadrez do Lucas</title>
+
+  <!-- Bootstrap Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+  <!-- Header Start -->
+  <header class="header p-3 position-absolute start-0 top-0 end-0">
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="/" class="text-decoration-none text-white fs-5 fw-bold">Xadrez</a>
+
+      <div>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Flyout Navigation Start -->
+  <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+
+    <div class="dropdown-nav__container container-xxl d-flex align-items-start align-items-md-center">
+
+      <div class="row align-items-start">
+
+        <div class="col-12 col-sm-4 mt-4">
+          <a href="#" class="row text-decoration-none">
+            <div class="col-2 col-sm-12 mb-4">
+              <img src="img/memoria.jpeg" alt="memoria" class="img-fluid" width="553" height="746" loading="lazy">
+            </div>
+            <div class="col-10">
+              <h3>Melhora a memória</h3>
+              <p>O xadrez é um jogo que exige que você se lembre de muitas coisas, como as regras do jogo, as posições das peças e as jogadas anteriores. Jogar xadrez regularmente pode ajudar a melhorar sua memória e sua capacidade de lembrar informações importantes</p>
+              <p>Saber mais <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-4 mt-4">
+          <a href="#" class="row text-decoration-none">
+            <div class="col-2 col-sm-12 mb-4">
+              <img src="img/Rproblemas.jpeg" alt="resolução de problemas" class="img-fluid" width="553" height="746" loading="lazy">
+            </div>
+            <div class="col-10">
+              <h3>Desenvolve habilidades de resolução de problemas</h3>
+              <p> O xadrez é um jogo que exige que você pense à frente e planeje suas jogadas com antecedência. Isso pode ajudá-lo a desenvolver habilidades de resolução de problemas que podem ser aplicadas em outras áreas da vida </p>
+              <p>Saber mais <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-4 mt-4">
+          <a href="#" class="row text-decoration-none">
+            <div class="col-2 col-sm-12 mb-4">
+              <img src="img/criatividade.jpeg" alt="criatividadelass="class="img-fluid" width="553" height="746" loading="lazy">
+            </div>
+            <div class="col-10">Aumenta a criatividadeEssential Nutrients</h3>
+              <p>O xadrez é um jogo que permite que você experimente diferentes estratégias e táticas para vencer. Isso pode ajudá-lo a desenvolver sua criatividade e a pensar fora da caixa </p>
+              <p>Saber mais <i class="bi bi-arrow-right-short"></i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </button>
+
+    </div>
+
+  </nav>
+  <!-- Flyout Navigation End -->
+
+  <!-- Hero Start -->
+  <section class="hero">
+
+    
+    
+    <div class="hero__content h-100 container-custom position-relative">
+      <div class="d-flex h-100 align-items-center hero__content-width">
+        <div class="text-white"><h1>Os 3 Benefícios  do Xadrez</h1>
+          <p class="lead mb-4">
+            O xadrez é um jogo de tabuleiro que pode trazer muitos benefícios para a saúde mental e emocional. Aqui estão três benefícios do xadrez:</p>
+        </div>
+      </div>
+    
+      <img src="img/xadrez.jpeg" alt="xadrez" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+      <a href="#scroll-down" class="hero__scroll-btn">
+        Explorar <i class="bi bi-arrow-down-short"></i>
+      </a>
+    </div>
+
+  </section>
+  <!-- Hero End -->
+
+  <a id="scroll-down"></a>
+  <!-- Section One Start -->
+  <section class="steps container-custom">
+
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+        <img src="img/memoria.jpeg" alt="Memoria" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+
+        <div class="steps__content-width">
+          <span>01</span>
+          <h1 class="h2 mb-4">Melhora a memória</h1>
+          <p class="mb-4">O xadrez é um jogo que exige que você se lembre de muitas coisas, como as regras do jogo, as posições das peças e as jogadas anteriores. Jogar xadrez regularmente pode ajudar a melhorar sua memória e sua capacidade de lembrar informações importantes.</p>
+          <a href="#">Saiba mais <i class="bi bi-arrow-right"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Section One End -->
+
+  <!-- Section One Start -->
+  <section class="steps steps--background">
+
+    <div class="container-custom">
+
+      <div class="row">
+        <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter order-sm-1">
+          <img src="img/Rproblemas.jpeg" alt="Health Benefits" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+        </div>
+
+        <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+          <div class="steps__content-width">
+            <span>02</span>
+            <h1 class="h2 mb-4">Desenvolve habilidades de resolução de problemas</h1>
+            <p class="mb-4">O xadrez é um jogo que exige que você pense à frente e planeje suas jogadas com antecedência. Isso pode ajudá-lo a desenvolver habilidades de resolução de problemas que podem ser aplicadas em outras áreas da vida.</p>
+            <a href="#">Saiba mais <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Section One End -->
+
+  <!-- Section One Start -->
+  <section class="steps container-custom">
+
+    <div class="row">
+      <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter">
+        <img src="img/criatividade.jpeg" alt="Essential Nutrients" class="img-fluid pb-4 steps__section-thumbnail" width="553" height="746" loading="lazy">
+      </div>
+
+      <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter">
+
+        <div class="steps__content-width">
+          <span>03</span>
+          <h1 class="h2 mb-4">Aumenta a criatividade</h1>
+          <p class="mb-4">O xadrez é um jogo que permite que você experimente diferentes estratégias e táticas para vencer. Isso pode ajudá-lo a desenvolver sua criatividade e a pensar fora da caixa .</p>
+          <a href="#">Saiba mais <i class="bi bi-arrow-right"></i></a>
+
+        </div>
+      <br>
+
+      </div>
+
+      
+      
+      <div>
+        <iframe src="https://giphy.com/embed/iCZyBnPBLr0dy " width="480" height="201"  frameBorder="0" class="giphy-embed justify-content-center"></iframe><p></p>
+       
+      </div>
+    </div>
+
+  </section>
+  <!-- Section One End -->
+
+  <!-- Section With 3 Col's Start -->
+  <section class="bg-dark text-white py-4">
+    <div class="container-custom my-4">
+      <div class="row">
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="img/memo2crianca.jpeg" class="mb-4 img-fluid" alt="memoria" width="441" height="248" loading="lazy">
+          <h3>Melhora a memoria</h3>
+          <p>Jogar xadrez pode ser um super aliado no desenvolvimento das crianças. A prática estimula habilidades como memória, concentração, planejamento e capacidade de tomar decisões. O jogo de tabuleiro –um dos mais antigos do mundo– pode abranger uma extensa faixa etária.</p>
+        </div>
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="img/Rproblemas2.jpeg" class="mb-4 img-fluid" alt="Resolução de problemas" width="441" height="248" loading="lazy">
+          <h3>Desenvolve habilidades de resolução de problemas</h3>
+          <p>Aumenta as habilidades analíticas: O xadrez é um jogo de estratégia e planejamento, o que significa que requer que você analise situações complexas e tome decisões rápidas e precisas. Jogar xadrez regularmente pode ajudar a melhorar suas habilidades analíticas e de resolução de problemas. </p>
+        </div>
+
+        <div class="col-12 col-sm-4 mb-4">
+          <img src="img/criatividade 2.jpeg" class="mb-4 img-fluid" alt="criatividade" width="441" height="248" loading="lazy">
+          <h3>Aumenta a criatividade</h3>
+          <p>O xadrez é um jogo que pode ajudar a desenvolver a criatividade e o raciocínio lógico, além de melhorar a capacidade de resolução de problemas e a leitura . O jogo também pode ajudar a prevenir o Alzheimer e a melhorar a concentração . Além disso, estudos científicos revelam que jogar xadrez pode aumentar o Quociente de Inteligência (QI) .</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section With 3 Col's End -->
+    <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter"> 
+              <h3>Mais Benefícios que o Xadrez pode trazer </h3>
+            
+              <ol>
+                <li>Une as pessoas.</li>
+                <li>Ensina-te como vencer e perder.</li>
+                <li>Ajuda as crianças.</li>  
+                <li>Pode ajudar a tua concentração.</li>  
+                <li>Pode ser uma ferramenta educacional.</li>  
+                <li>Desenvolve criatividade.</li>
+                <li>Promove confiança.</li>
+                <li>Desenvolve capacidades de resolução de problemas.</li>
+                <li>Maior desenvoltura ao tomar decisões.</li>
+                <li>Treinamento do pensamento crítico.</li>
+                <li>Maturidade intelectual.</li>
+                <li>Poder de análise de consequências.</li>
+                <li>Aumento da disciplina.</li>
+                <li>Responsabilidade das ações.</li>
+                <li>Habilidade de antecipação.</li>
+                <li>Melhora da concentração, da memória, da paciência e da criatividade.</li>
+                <li>Estimula o raciocínio lógico-matemático.</li>
+                <li>Exercita a mente e estimula a criatividade.</li>
+                <li>Ajuda o aluno a lidar com derrotas e ainda assim manter um ambiente cordial.</li>
+              
+              </ol>
+          </div>
+  <!-- Footer Start -->
+  <footer class="footer bg-dark text-white">
+    <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="me-2 text-muted text-decoration-none">
+          <i class="bi bi-cup"></i>
+          <span>&copy; 2023 Xadrez</span>
+        </a> 
+      </div>
+
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex text-white">
+        <li class="ms-3"><a class="text-muted" href="https://github.com/lucasmdcv" target="_blank"><i class="bi bi-github"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/lucas_mdcv/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/profile.php?id=100006204727260" target="_blank"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/lucas-mendes-631691232/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+
+
+    </div>
+
+
+
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
